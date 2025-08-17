@@ -3,31 +3,45 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OB Hello</title>
+    <title>Ficha Online</title>
     <style>
-      :root { color-scheme: dark; }
       body{margin:0;padding:20px;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#12131a;color:#fff}
       h2{margin:0 0 10px}
       .row{display:flex;gap:10px;align-items:center;margin:10px 0}
+      input{flex:1;padding:6px;border-radius:6px;border:1px solid #333;background:#1a1a1a;color:#fff}
       button{padding:8px 12px;border:0;border-radius:8px;background:#4a90e2;color:#fff;cursor:pointer}
       button:disabled{opacity:.6;cursor:not-allowed}
       .muted{opacity:.7;font-size:.9rem}
       #log{margin-top:12px;white-space:pre-wrap;background:#0f1220;border:1px solid #2a2f4a;padding:10px;border-radius:8px;min-height:60px}
+      .bar{height:10px;background:#2a2f4a;border-radius:4px;margin-top:4px;overflow:hidden}
+      .bar span{display:block;height:100%}
+      #fichaBox{margin-top:20px;display:none}
     </style>
   </head>
   <body>
-    <h2>Olá, Owlbear! 👋</h2>
-    <div class="muted" id="ctx">Checando contexto…</div>
-
+    <h2>Conexão com Ficha</h2>
     <div class="row">
-      <button id="ping">Enviar Ping</button>
-      <button id="notify">Notificação</button>
-      <button id="close">Fechar Popover</button>
+      <input id="site" placeholder="https://seudominio.com" />
+    </div>
+    <div class="row">
+      <input id="charId" placeholder="ID da Ficha" />
+    </div>
+    <div class="row">
+      <button id="saveConn">Salvar Conexão</button>
+      <button id="loadFicha">Carregar Ficha</button>
+    </div>
+
+    <div id="fichaBox">
+      <h3 id="fName"></h3>
+      <div class="muted" id="fMeta"></div>
+      <div id="bars"></div>
     </div>
 
     <div id="log"></div>
 
-    <!-- Importe só o seu script; o SDK será importado dentro do main.js -->
-    <script type="module" src="./main.js?v=20250817"></script>
+    <!-- SDK do Owlbear -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@owlbear-rodeo/sdk/dist/index.esm.js"></script>
+    <!-- Script principal -->
+    <script type="module" src="main.js?v=20250817"></script>
   </body>
 </html>
