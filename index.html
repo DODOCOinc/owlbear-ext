@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OB Hello</title>
     <style>
+      :root { color-scheme: dark; }
       body{margin:0;padding:20px;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#12131a;color:#fff}
       h2{margin:0 0 10px}
       .row{display:flex;gap:10px;align-items:center;margin:10px 0}
@@ -26,8 +27,7 @@
 
     <div id="log"></div>
 
-    <!-- Import ESM do SDK direto do CDN -->
-    <script type="module" src="https://cdn.jsdelivr.net/npm/@owlbear-rodeo/sdk/dist/index.esm.js"></script>
-    <script type="module" src="main.js"></script>
+    <!-- Importe só o seu script; o SDK será importado dentro do main.js -->
+    <script type="module" src="./main.js?v=20250817"></script>
   </body>
 </html>
