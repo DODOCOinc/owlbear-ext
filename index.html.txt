@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OB Hello</title>
+    <style>
+      body{margin:0;padding:20px;font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;background:#12131a;color:#fff}
+      h2{margin:0 0 10px}
+      .row{display:flex;gap:10px;align-items:center;margin:10px 0}
+      button{padding:8px 12px;border:0;border-radius:8px;background:#4a90e2;color:#fff;cursor:pointer}
+      button:disabled{opacity:.6;cursor:not-allowed}
+      .muted{opacity:.7;font-size:.9rem}
+      #log{margin-top:12px;white-space:pre-wrap;background:#0f1220;border:1px solid #2a2f4a;padding:10px;border-radius:8px;min-height:60px}
+    </style>
+  </head>
+  <body>
+    <h2>Olá, Owlbear! 👋</h2>
+    <div class="muted" id="ctx">Checando contexto…</div>
+
+    <div class="row">
+      <button id="ping">Enviar Ping</button>
+      <button id="notify">Notificação</button>
+      <button id="close">Fechar Popover</button>
+    </div>
+
+    <div id="log"></div>
+
+    <!-- Import ESM do SDK direto do CDN -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@owlbear-rodeo/sdk/dist/index.esm.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
