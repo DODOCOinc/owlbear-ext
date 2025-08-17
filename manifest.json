@@ -1,15 +1,15 @@
 {
   "name": "OB Hello",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "manifest_version": 1,
-  "description": "Meu popover de teste integrado ao Owlbear Rodeo",
-  "icon": "https://tecnologizar.org/wp-content/uploads/owlbear-ext/icon.svg",
+  "description": "Meu popover de teste",
+  "icon": "https://dodocoinc.github.io/owlbear-ext/icon.png",
   "author": "Seu Nome",
-  "homepage_url": "https://tecnologizar.org",
+  "homepage_url": "https://github.com/dodocoinc/owlbear-ext",
   "action": {
     "title": "Hello",
-    "icon": "https://tecnologizar.org/wp-content/uploads/owlbear-ext/icon.svg",
-    "popover": "https://tecnologizar.org/wp-content/uploads/owlbear-ext/index.html",
+    "icon": "https://dodocoinc.github.io/owlbear-ext/icon.png",
+    "popover": "https://dodocoinc.github.io/owlbear-ext/index.html",
     "width": 420,
     "height": 360
   }
