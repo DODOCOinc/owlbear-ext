@@ -1,15 +1,15 @@
 {
   "name": "OB Hello",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 1,
   "description": "Meu popover de teste",
-  "icon": "https://dodocoinc.github.io/owlbear-ext/icon.png",
+  "icon": "https://dodocoinc.github.io/owlbear-ext/icon.png?v=20250817",
   "author": "Seu Nome",
   "homepage_url": "https://github.com/dodocoinc/owlbear-ext",
   "action": {
     "title": "Hello",
-    "icon": "https://dodocoinc.github.io/owlbear-ext/icon.png",
-    "popover": "https://dodocoinc.github.io/owlbear-ext/index.html",
+    "icon": "https://dodocoinc.github.io/owlbear-ext/icon.png?v=20250817",
+    "popover": "https://dodocoinc.github.io/owlbear-ext/index.html?v=20250817",
     "width": 420,
     "height": 360
   }
