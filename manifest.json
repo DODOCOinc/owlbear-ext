@@ -1,20 +1,17 @@
 {
-  "name": "Ficha Online",
-  "version": "1.0.1",
+  "name": "OB Hello",
+  "version": "0.0.3",
   "manifest_version": 1,
-  "icon": "icon.png",
-  "description": "Conecta ao WordPress para ler/editar barras da ficha.",
+  "description": "Meu popover de teste",
+  "icon": "https://dodocoinc.github.io/owlbear-ext/icon.svg",
+  "author": "Seu Nome",
   "homepage_url": "https://dodocoinc.github.io/owlbear-ext/",
-  "actions": [
-    {
-      "id": "ficha-panel",
-      "title": "Ficha",
-      "icon": "icon.png",
-      "popover": {
-        "url": "index.html?v=20250817",
-        "width": 380,
-        "height": 520"
-      }
-    }
-  ]
+  "action": {
+    "title": "Hello",
+    "icon": "https://dodocoinc.github.io/owlbear-ext/icon.svg",
+    "popover": "https://dodocoinc.github.io/owlbear-ext/index.html",
+    "width": 420,
+    "height": 360
+  },
+  "permissions": []
 }
